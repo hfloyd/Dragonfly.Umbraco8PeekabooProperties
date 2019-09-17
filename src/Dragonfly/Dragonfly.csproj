@@ -14,6 +14,8 @@
     <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Umbraco8PeekabooProperties</RepositoryUrl>
     <PackageId>Dragonfly.Umbraco8PeekabooProperties</PackageId>
     <AssemblyName>Dragonfly.Umbraco8PeekabooProperties</AssemblyName>
+    <PackageTags>Umbraco</PackageTags>
+    <Version>0.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="UmbracoCms.Core" Version="8.1.0" />
@@ -40,7 +42,4 @@
     </None>
   </ItemGroup>
   <Import Project="..\Custom.targets" />
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="XCOPY /s /y &quot;$(TargetDir)$(ProjectName).*&quot; &quot;C:\Users\Heather\NAS Folders\Active Projects\Webs\BF Sites\sourcecode-BigFishBaseline\BigFish.Web\bin\&quot;" />
-  </Target>
 </Project>

@@ -1,0 +1,12 @@
+﻿.peekaboo-checkboxlist ul {
+    margin-left: 0px;
+}
+
+.peekaboo-checkboxlist li {
+    list-style-type: none;
+    padding: 2px 0px;
+}
+
+.peekaboo-Loading {
+    color: grey;
+}
