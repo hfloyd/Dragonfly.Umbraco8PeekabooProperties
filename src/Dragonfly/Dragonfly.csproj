@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Heather Floyd [www.HeatherFloyd.com]</Copyright>
+    <RepositoryType>GIT</RepositoryType>
+    <Authors>Heather Floyd</Authors>
+    <Company></Company>
+    <Product>Dragonfly</Product>
+    <Description>Allows configuring groups of Properties to Show/Hide based on selections in other properties.</Description>
+    <PackageLicenseUrl>https://github.com/hfloyd/Dragonfly.Umbraco8PeekabooProperties/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/hfloyd/Dragonfly.Umbraco8PeekabooProperties</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Umbraco8PeekabooProperties</RepositoryUrl>
+    <PackageId>Dragonfly.Umbraco8PeekabooProperties</PackageId>
+    <AssemblyName>Dragonfly.Umbraco8PeekabooProperties</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="UmbracoCms.Core" Version="8.1.0" />
+    <PackageReference Include="UmbracoCms.Web" Version="8.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+<ItemGroup>
+<Content Include="App_Plugins/**/*.*">
+      <Pack>true</Pack>
+      <BuildAction>Content</BuildAction>
+      <IncludeInPackage>true</IncludeInPackage>
+      <CopyToOutput>true</CopyToOutput>
+    </Content>
+  </ItemGroup>
+<ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  <Import Project="..\Custom.targets" />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="XCOPY /s /y &quot;$(TargetDir)$(ProjectName).*&quot; &quot;C:\Users\Heather\NAS Folders\Active Projects\Webs\BF Sites\sourcecode-BigFishBaseline\BigFish.Web\bin\&quot;" />
+  </Target>
+</Project>
