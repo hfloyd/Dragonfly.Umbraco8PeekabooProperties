@@ -1,4 +1,4 @@
-angular.module("umbraco").controller("Dragonfly.PeekabooProperties.DropdownListController",
+angular.module("umbraco").controller("PeekabooProperties.DropdownListController",
 
 function ($scope, $q, $timeout, assetsService) {
 

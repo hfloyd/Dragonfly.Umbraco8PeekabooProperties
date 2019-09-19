@@ -8,14 +8,15 @@
     <Authors>Heather Floyd</Authors>
     <Company></Company>
     <Product>Dragonfly</Product>
-    <Description>Allows configuring groups of Properties to Show/Hide based on selections in other properties.</Description>
+    <Description>Allows configuring Groups and Properties to Show/Hide based on a selection in a DropdownList or CheckboxList</Description>
     <PackageLicenseUrl>https://github.com/hfloyd/Dragonfly.Umbraco8PeekabooProperties/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/hfloyd/Dragonfly.Umbraco8PeekabooProperties</PackageProjectUrl>
     <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Umbraco8PeekabooProperties</RepositoryUrl>
     <PackageId>Dragonfly.Umbraco8PeekabooProperties</PackageId>
     <AssemblyName>Dragonfly.Umbraco8PeekabooProperties</AssemblyName>
     <PackageTags>Umbraco</PackageTags>
-    <Version>0.0.1</Version>
+    <Version>1.1.1</Version>
+    <PackageReleaseNotes>Fixing PropertyValueConverters</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="UmbracoCms.Core" Version="8.1.0" />

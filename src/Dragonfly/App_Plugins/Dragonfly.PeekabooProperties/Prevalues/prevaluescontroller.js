@@ -1,5 +1,5 @@
 ﻿angular.module("umbraco")
-    .controller("Dragonfly.PeekabooProperties.prevaluesController",
+    .controller("PeekabooProperties.prevaluesController",
     function ($scope, $timeout, assetsService) {
 
         // Initialize the model

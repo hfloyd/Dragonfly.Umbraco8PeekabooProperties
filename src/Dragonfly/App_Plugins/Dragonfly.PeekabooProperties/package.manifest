@@ -2,7 +2,7 @@
     propertyEditors: [      
         {
 			alias: 'Dragonfly.PeekabooProperties.CheckboxList',
-			name: 'Checkbox list (Dragonfly.PeekabooProperties)',
+			name: 'Peekaboo Checkbox List',
 			editor:{
 				valueType: "JSON",
 				view: '~/App_Plugins/Dragonfly.PeekabooProperties/PropertyEditors/CheckboxList/checkboxlist.html',
@@ -21,7 +21,7 @@
         },
         {
 			alias: 'Dragonfly.PeekabooProperties.DropdownList',
-			name: 'Dropdown list (Dragonfly.PeekabooProperties)',
+			name: 'Peekaboo Dropdown List',
 			editor:{
 				valueType: "JSON",
 				view: '~/App_Plugins/Dragonfly.PeekabooProperties/PropertyEditors/DropdownList/dropdownlist.html',
@@ -54,8 +54,7 @@
     javascript: [
 		'~/App_Plugins/Dragonfly.PeekabooProperties/PropertyEditors/CheckboxList/checkboxlistcontroller.js',
 		'~/App_Plugins/Dragonfly.PeekabooProperties/PropertyEditors/DropdownList/dropdownlistcontroller.js',
-		'~/App_Plugins/Dragonfly.PeekabooProperties/Prevalues/prevaluescontroller.js',
-		'~/App_Plugins/Dragonfly.PeekabooProperties/peekaboo.resource.js'
+		'~/App_Plugins/Dragonfly.PeekabooProperties/Prevalues/prevaluescontroller.js'
     ],
 
     css: [

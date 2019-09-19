@@ -10,34 +10,36 @@ function changeVisibilityItem(scope, item, selected) {
     }
 }
 
-// Hide/show tabs
+// Hide/show groups
 function hideShowTabs(tabsList, selected) {
     if (tabsList && tabsList !== '') {
         var tabLabels = tabsList.split(",");
         angular.forEach(tabLabels, function (value, key) {
             // Remove the first charater which contains the action (+ show, - Hide)
-            var tabLabel = value.substring(1, value.length);
+            var tabLabel = 'group-'+ value.substring(1, value.length);
             var action = value.charAt(0);
             // Look for the tab control
-            var tabControls = $("a[href^='#tab']");
+            var tabControls = angular.element(document).find("div[class^='umb-group-panel']");
+            
             // Show/hide the control
-            angular.forEach(tabControls, function (value, key) {
-                if (value.text == tabLabel) {
+            angular.forEach(tabControls, function (element) {
+                var controlId = getDataElementValue(element);
+                if (controlId == tabLabel) {
                     switch (action) {
                         case '+':
                             if (selected) {
-                                $(value).show();
+                                $(element).show();
                             }
                             else {
-                                $(value).hide();
+                                $(element).hide();
                             }
                             break;
                         case '-':
                             if (selected) {
-                                $(value).hide();
+                                $(element).hide();
                             }
                             else {
-                                $(value).show();
+                                $(element).show();
                             }
                             break;
                         default:
@@ -45,6 +47,17 @@ function hideShowTabs(tabsList, selected) {
                 }
             });
         });
+    }
+}
+
+//Test for Valid Group Div Element and return value
+function getDataElementValue(element) {
+    //var attribute = element.getAttribute(attributeName);
+    if (element.hasAttribute('data-element'))
+    {
+        return element.attributes['data-element'].nodeValue;
+    } else {
+        return "";
     }
 }
 

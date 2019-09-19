@@ -1,4 +1,4 @@
-angular.module("umbraco").controller("Dragonfly.PeekabooProperties.CheckboxListController", function ($scope, $q, $timeout, assetsService) {
+angular.module("umbraco").controller("PeekabooProperties.CheckboxListController", function ($scope, $q, $timeout, assetsService) {
 
     $scope.isLoaded = false;
 
