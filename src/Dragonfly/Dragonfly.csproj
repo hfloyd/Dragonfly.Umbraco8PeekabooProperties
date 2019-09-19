@@ -15,7 +15,7 @@
     <PackageId>Dragonfly.Umbraco8PeekabooProperties</PackageId>
     <AssemblyName>Dragonfly.Umbraco8PeekabooProperties</AssemblyName>
     <PackageTags>Umbraco</PackageTags>
-    <Version>1.1.1</Version>
+    <Version>1.2.0</Version>
     <PackageReleaseNotes>Fixing PropertyValueConverters</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
