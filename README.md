@@ -34,7 +34,10 @@ Specify multiple groups or properties using commas.
 
     +PropertyA,-PropertyB
 
-## Tips##
+## Tips ##
 
 - Be careful hiding Mandatory properties that will prevent the Content from being Saved.
 - To keep things together and reusable, put all the related Properties/Groups onto a single "Composition" Doctype with the Peekaboo Property at the top.
+
+## Known Issues ##
+- The Checkbox List datatype hasn't been as thoroughly tested as the Dropdown.
