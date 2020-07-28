@@ -40,4 +40,7 @@ Specify multiple groups or properties using commas.
 - To keep things together and reusable, put all the related Properties/Groups onto a single "Composition" Doctype with the Peekaboo Property at the top.
 
 ## Known Issues ##
+- The showing/hiding doesn't work inside a Nested Content property
+- The Jquery Plugin rendering hasn't been tested.
 - The Checkbox List datatype hasn't been as thoroughly tested as the Dropdown.
+
