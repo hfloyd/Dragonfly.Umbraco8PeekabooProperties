@@ -2,11 +2,14 @@
 
 An Umbraco v8 package created by [Heather Floyd](https://www.HeatherFloyd.com).
 
+'Peekaboo Checkbox List' and 'Peekaboo Dropdown List' property editors allow you to show/hide other individual or groups of properties based on the selection in the Peekaboo property.
+
 Based on the v7 package [uDynamic](https://our.umbraco.com/packages/backoffice-extensions/udynamic).
 
 ## Installation ##
+[![Nuget Downloads](https://buildstats.info/nuget/Dragonfly.Umbraco8PeekabooProperties)](https://www.nuget.org/packages/Dragonfly.Umbraco8PeekabooProperties/)
 
-Install via NuGet
+    PM > Install-Package Dragonfly.Umbraco8PeekabooProperties
 
 ## Setup ##
 
