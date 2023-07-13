@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -19,7 +19,7 @@
     <PackageReleaseNotes>Fixing PropertyValueConverters</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="UmbracoCms.Core" Version="8.1.0" />
+    <PackageReference Include="UmbracoCms.Core" Version="8.5.4" />
     <PackageReference Include="UmbracoCms.Web" Version="8.1.0" />
   </ItemGroup>
   <ItemGroup>
